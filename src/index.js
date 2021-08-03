@@ -1,6 +1,7 @@
 module.exports = function toReadable (number) {
 
-	const value1 = {
+	const
+	 value1 = {
 
 		0: "zero",
 		1: "one",
@@ -12,9 +13,9 @@ module.exports = function toReadable (number) {
 		8: "eight",
 		9: "nine",
 		10: "ten"
-	};
+	},
 
-	const value2 = {
+	 value2 = {
 
 		11: "eleven",
 		12: "twelve",
@@ -25,9 +26,9 @@ module.exports = function toReadable (number) {
 		17: "seventeen",
 		18: "eighteen",
 		19: "nineteen"
-	};
+	},
 
-	const value3 = {
+	 value3 = {
 
 		2: "twenty",
 		3: "thirty",
@@ -40,7 +41,9 @@ module.exports = function toReadable (number) {
 	};
 
 	if (number === 0) {
-        return "zero";
-    };
+        return value1[number];
+    }
+    if (0 < number && number < 10) {
+        return value1[number];
   
 }
