@@ -7,6 +7,7 @@ module.exports = function toReadable (number) {
 		2: "two",
 		3: "three",
 		4: "four",
+		5: "five",
 		6: "six",
 		7: "seven",
 		8: "eight",
@@ -40,7 +41,19 @@ module.exports = function toReadable (number) {
 	};
 
 	  if (number === 0) {
-        return "zero";
+        return value1[0];
+    }
+
+    if (0 < number && number < 11) {
+    	return value1[number];
+    }
+
+    if (number === 11) {
+    	return value2[0];
+    }
+
+    if (11 < number && number < 20) {
+    	return value2[number];
     };
-  
+
 }
