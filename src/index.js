@@ -41,7 +41,7 @@ module.exports = function toReadable (number) {
 	};
 
 	if (number === 0) {
-        return value1[number];
+        return "zero";
     }
     if (0 < number && number < 10) {
         return value1[number];
